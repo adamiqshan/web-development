@@ -1,0 +1,38 @@
+/* Tag selector */
+h1{
+  color: red;
+  font-size: 50px;
+}
+
+h1:hover{
+  color:green;
+}
+
+img:hover{
+  border-radius: 40%;
+  background-color: yellow;
+}
+
+
+/* class selector */
+.beef_circle{
+  background-color: green;
+}
+
+.broccoli{
+  background-color: red;
+}
+
+/* id selector */
+
+#par-one{
+  color: blue;
+}
+
+#par-two:hover{
+  color:blue;
+}
+
+#par-one:hover{
+  color: black;
+}
