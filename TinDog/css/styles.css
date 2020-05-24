@@ -4,6 +4,7 @@ font-family: 'Montserrat'
 
 .container-fluid{
   padding: 3% 15%;
+  padding-bottom: 7%;
 }
 
 .navbar{
@@ -42,12 +43,16 @@ h1 {
 }
 
 .title-image{
-  transform: rotate(30deg);
   width: 60%;
+  transform: rotate(25deg);
+  right: 20%;
+  position: absolute;
 }
 
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .icon-set{
@@ -113,4 +118,54 @@ h2{
 .carousel-item{
   padding: 7% 15%;
   padding-bottom: 3%;
+}
+
+#pricing{
+  padding:100px;
+}
+
+.pricing-cards{
+  padding: 3% 2%;
+  text-align: center;
+}
+
+.pricing-text{
+ text-align: center;
+}
+/* Media Query Breakpoint */
+
+@media (max-width:1000px){
+
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    transform: rotate(0);
+    position: static;
+    max-width: 50%;
+  }
+}
+
+#cta{
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.foot-notes{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+#footer{
+padding: 7% 15%;
+text-align: center;
+}
+
+.social-icon{
+  margin: 20px 10px;;
 }
