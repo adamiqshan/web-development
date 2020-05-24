@@ -45,3 +45,31 @@ h1 {
   transform: rotate(30deg);
   width: 60%;
 }
+
+#features{
+  padding: 7% 15%;
+}
+
+.icon-set{
+  color:#ef8172;
+  padding-bottom:1rem ;
+}
+
+.icon-set:hover{
+  color:#ff4c68;
+}
+
+.feature-head{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+.feature-box{
+  text-align: center;
+  padding:5%;
+}
