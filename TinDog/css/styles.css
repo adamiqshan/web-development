@@ -73,3 +73,44 @@ p{
   text-align: center;
   padding:5%;
 }
+
+#testimonials{
+  background-color: #ef8172;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-text{
+  text-align: center;
+  padding: 20px 20px 5px;
+}
+
+.testimonial-image{
+  border-radius: 100%;
+  margin: 20px;
+  max-width: 20%;
+}
+
+h2{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 15px;
+  max-width: 25%;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+  padding-bottom: 3%;
+}
