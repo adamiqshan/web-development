@@ -32,5 +32,6 @@ else if (randomNumber2>randomNumber1) {
 }
 
 else{
+    document.querySelector('h1').style.fontSize = "6rem"
     document.querySelector('h1').innerHTML = 'Draw!';
 }
