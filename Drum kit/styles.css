@@ -14,7 +14,9 @@ h1 {
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  font-size: 1rem;
 }
+
 
 .w {
   background-image:url('images/tom1.png');
