@@ -5,6 +5,7 @@ const app = express();
 
 app.get('/', function(req, res){
 
+    //reading api file from directory
     const api = fs.readFileSync('API.txt').toString()
     console.log(api)
 
