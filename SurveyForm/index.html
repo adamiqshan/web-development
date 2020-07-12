@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Customer Feedback Survey
+        </h1>
+        <p>
+            Please let us know about your experience with our product and service.
+        </p>
+    </header>
+    <form action="">
+
+        <div class="container">
+            <label class="form-data">
+                Name
+                <input type="text" name="name" id="" placeholder="Enter your name" class='flex-box' required>
+            </label>
+            
+            <label class="form-data">
+                Email
+                <input type="email" name="name" id="" placeholder="Enter your email" class='flex-box' required>
+            </label>
+
+            <label class="form-data">
+                Age
+                <input type="number" placeholder="Enter age" class="flex-box" required>
+            </label>
+
+            <label class="form-data">
+                Is this the first time you are using our Products and services?
+                <select name="first-time" id="" class='flex-box'>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>        
+                </select>
+            </label>
+
+            <label class="form-data">
+                Would you recommend it to your friends and colleagues?
+                <div>
+                    <input type="radio" name="recommend" value="yes" checked>
+                    <label>Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="recommend" value="no">
+                    <label>No</label>
+                </div>
+            </label>
+            <label class="form-data">
+                How satisfied are you with our company overall?
+                <div>
+                    <input type="radio" name="satisfied" value="verymuch" checked>
+                    <label>Very Satisfied</label>
+                </div>
+                <div>
+                    <input type="radio" name="satisfied" value="satisfied">
+                    <label>Satisfied</label>
+                </div>
+                <div>
+                    <input type="radio" name="satisfied" value="undecided">
+                    <label>Undecided</label>
+                </div>
+                <div>
+                    <input type="radio" name="satisfied" value="unsatisfied">
+                    <label>Unsatisfied</label>
+                </div>
+                <div>
+                    <input type="radio" name="satisfied" value="veryUnsatisfied">
+                    <label>Very Unsatisfied</label>
+                </div>
+            </label>
+
+            <label class="form-data">
+                Do you have any suggestions to improve our product and service?
+                <textarea name="suggestion" id="" cols="30" rows="10" style="width: 100%; border-radius: 0.5rem;";">
+                </textarea>
+            </label>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </div>  
+    </form>
+</body>
+</html>
