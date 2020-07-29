@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
-const { filterSeries } = require('async');
+const encrypt = require('mongoose-encryption');
 
 const app = express();
 
@@ -19,6 +19,9 @@ const userSchema = new mongoose.Schema({
 },
     { versionKey: false}
 );
+
+const encKey = 'UseThisStringToInstantiateEncryptionVector.'
+userSchema.plugin(encrypt, {secret: encKey, encryptedFields: ['password']});
 
 const User = mongoose.model('User', userSchema)
 
