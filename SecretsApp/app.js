@@ -1,4 +1,5 @@
 //jshint esversion:6
+require('dotenv').config()
 const mongoose = require('mongoose');
 const express = require('express');
 const ejs = require('ejs');
@@ -20,7 +21,7 @@ const userSchema = new mongoose.Schema({
     { versionKey: false}
 );
 
-const encKey = 'UseThisStringToInstantiateEncryptionVector.'
+const encKey = process.env.ENCKEY
 userSchema.plugin(encrypt, {secret: encKey, encryptedFields: ['password']});
 
 const User = mongoose.model('User', userSchema)
