@@ -1,9 +1,11 @@
 //jshint esversion:6
+require('dotenv').config()
 const mongoose = require('mongoose');
 const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
-const encrypt = require('mongoose-encryption');
+// const encrypt = require('mongoose-encryption');
+const md5 = require('md5');
 
 const app = express();
 
@@ -20,8 +22,8 @@ const userSchema = new mongoose.Schema({
     { versionKey: false}
 );
 
-const encKey = 'UseThisStringToInstantiateEncryptionVector.'
-userSchema.plugin(encrypt, {secret: encKey, encryptedFields: ['password']});
+// const encKey = process.env.ENCKEY
+// userSchema.plugin(encrypt, {secret: encKey, encryptedFields: ['password']});
 
 const User = mongoose.model('User', userSchema)
 
@@ -41,7 +43,7 @@ app.get('/login', function(req, res){
 app.post('/register', function(req, res){
     const newUser = new User({
         email: req.body.username,
-        password: req.body.password
+        password: md5(req.body.password)
     });
 
     newUser.save(function(err){
@@ -55,7 +57,7 @@ app.post('/register', function(req, res){
 
 app.post('/login', function(req, res){
     const userName = req.body.username;
-    const password = req.body.password;
+    const password = md5(req.body.password);
 
     User.findOne({email: userName}, function(err, foundUser){
         if (err){
