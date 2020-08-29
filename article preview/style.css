@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(210, 46%, 95%);
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  height: 100vh;
+}
+
+
+.wrapper {
+  background-color: #fff;
+  display: flex;
+  height: 250px;
+  width: 640px;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+}
+
+.furniture {
+  height: 100%;
+  width: 40%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  object-position: left;
+  filter: brightness(105%)
+}
+
+.story{
+  padding: 35px;
+}
+
+h2{
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+p{
+  color: hsl(212, 23%, 69%);
+  font-size: 0.70rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.author img{
+  border-radius: 50%;
+  height: 35px;
+  margin-right: 15px;
+}
+
+h5{
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+
+.share-icon img{
+  height: 14px;
+  width:  14px;
+  margin-right:0 ;
+  position: relative;
+  top: 30%;
+  left: 30%;
+}
+
+.share-icon{
+  margin-left: auto;
+  height: 30px;
+  width: 30px;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+}
+
+
